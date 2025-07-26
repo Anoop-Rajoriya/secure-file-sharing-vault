@@ -24,19 +24,13 @@ const ShareSchema = Schema(
       ref: "User",
       required: true,
     },
-    sharedWithEmail: {
-      type: String,
-    },
+    sharedWithEmail: String,
     accessToken: {
       type: String,
       required: true,
     },
-    expiresAt: {
-      type: Date,
-    },
-    maxDownloads: {
-      type: Number,
-    },
+    expiresAt: Date,
+    maxDownloads: Number,
     downloadCount: {
       type: Number,
       default: 0,

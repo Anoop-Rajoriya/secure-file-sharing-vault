@@ -26,9 +26,7 @@ const FileSchema = Schema(
       type: Number,
       required: true,
     },
-    fileType: {
-      type: string,
-    },
+    fileType: String,
     owner: {
       type: Schema.Types.ObjectId,
       ref: "User",
